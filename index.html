@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plant-based food innovation from Argentina to the world">
+    <title>Mamma Sabe | Plant-Based Food Group</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Language Selector -->
+    <div class="language-bar">
+        <div class="container">
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en">🇬🇧 EN</button>
+                <button class="lang-btn" data-lang="es">🇪🇸 ES</button>
+                <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+                <button class="lang-btn" data-lang="de">🇩🇪 DE</button>
+                <button class="lang-btn" data-lang="pt">🇵🇹 PT</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">Real Food,<br>Real Impact</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Plant-based innovation from Argentina to the world</p>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">Who We Are</h2>
+            <p class="section-intro" data-i18n="about.text">We create authentic plant-based foods that bring people together. From Mediterranean-inspired bites to wholesome meals, every product is crafted with care and real ingredients.</p>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="products.title">Our Products</h2>
+            <p class="section-intro" data-i18n="products.subtitle">Premium compounds made with natural ingredients</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">🍔</div>
+                    <h3 class="product-title" data-i18n="products.medallones.name">Medallones</h3>
+                    <p class="product-description" data-i18n="products.medallones.desc">Plant-based burgers with vegetables, legumes, and grains.</p>
+                    <button class="btn-expand" onclick="toggleInfo('info-medallones')" data-i18n="products.btnMore">Learn more</button>
+                    <div class="product-info-expanded" id="info-medallones">
+                        <p><strong data-i18n="products.medallones.ingredients.label">Premium ingredients:</strong> <span data-i18n="products.medallones.ingredients.value">Chickpeas, lentils, quinoa, fresh vegetables</span></p>
+                        <p><strong data-i18n="products.medallones.format.label">Format:</strong> <span data-i18n="products.medallones.format.value">Frozen, ready to cook</span></p>
+                        <p><strong data-i18n="products.medallones.ideal.label">Ideal for:</strong> <span data-i18n="products.medallones.ideal.value">Retail, HoReCa, foodservice</span></p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🥙</div>
+                    <h3 class="product-title" data-i18n="products.falafel.name">Falafel</h3>
+                    <p class="product-description" data-i18n="products.falafel.desc">Crispy, golden, and full of authentic Mediterranean flavor.</p>
+                    <button class="btn-expand" onclick="toggleInfo('info-falafel')" data-i18n="products.btnMore">Learn more</button>
+                    <div class="product-info-expanded" id="info-falafel">
+                        <p><strong data-i18n="products.falafel.recipe.label">Traditional recipe:</strong> <span data-i18n="products.falafel.recipe.value">Chickpeas, Mediterranean spices, fresh herbs</span></p>
+                        <p><strong data-i18n="products.falafel.prep.label">Preparation:</strong> <span data-i18n="products.falafel.prep.value">Fry or air fryer in minutes</span></p>
+                        <p><strong data-i18n="products.falafel.uses.label">Uses:</strong> <span data-i18n="products.falafel.uses.value">Wraps, salads, main dishes</span></p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🍗</div>
+                    <h3 class="product-title" data-i18n="products.nuggets.name">Veggie Nuggets</h3>
+                    <p class="product-description" data-i18n="products.nuggets.desc">Crispy plant-based nuggets perfect for any occasion.</p>
+                    <button class="btn-expand" onclick="toggleInfo('info-nuggets')" data-i18n="products.btnMore">Learn more</button>
+                    <div class="product-info-expanded" id="info-nuggets">
+                        <p><strong data-i18n="products.nuggets.ingredients.label">Premium ingredients:</strong> <span data-i18n="products.nuggets.ingredients.value">Soy protein, vegetables, natural seasonings</span></p>
+                        <p><strong data-i18n="products.nuggets.format.label">Format:</strong> <span data-i18n="products.nuggets.format.value">Frozen, breaded, ready to fry</span></p>
+                        <p><strong data-i18n="products.nuggets.ideal.label">Ideal for:</strong> <span data-i18n="products.nuggets.ideal.value">Kids, snacks, appetizers</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PDF Download CTA -->
+            <div class="pdf-cta">
+                <p class="pdf-cta-text" data-i18n="products.pdfText">Want to see our complete product catalog?</p>
+                <a href="BrochureFINAL_MammaSabe.pdf" target="_blank" class="btn-pdf" data-i18n="products.pdfButton">
+                    📝 See full brochure
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Next -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="pipeline.title">In Development</h2>
+            <div class="tags-scroll">
+                <span class="tag" data-i18n="pipeline.item1">Veggie Burgers</span>
+                <span class="tag" data-i18n="pipeline.item2">Ready Meals</span>
+                <span class="tag" data-i18n="pipeline.item3">Dips & Spreads</span>
+                <span class="tag" data-i18n="pipeline.item4">Plant Proteins</span>
+                <span class="tag" data-i18n="pipeline.item5">Frozen Snacks</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Presence -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="market.title">Where We Are</h2>
+            
+            <!-- Market Presence Image -->
+            <div class="section-image">
+                <img src="mamasabeimagenes/presencia en mercado.png" alt="Market Presence">
+            </div>
+            
+            <div class="market-grid">
+                <div class="market-card">
+                    <h3 class="market-name" data-i18n="market.supermarkets.title">Supermarkets</h3>
+                    <p class="market-detail" data-i18n="market.supermarkets.desc">Leading chains across Argentina</p>
+                </div>
+                <div class="market-card">
+                    <h3 class="market-name" data-i18n="market.restaurants.title">Restaurants</h3>
+                    <p class="market-detail" data-i18n="market.restaurants.desc">HoReCa partners nationwide</p>
+                </div>
+                <div class="market-card">
+                    <h3 class="market-name" data-i18n="market.export.title">Export</h3>
+                    <p class="market-detail" data-i18n="market.export.desc">Growing presence in Latin America</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production & Capacity -->
+    <section class="section section-accent">
+        <div class="container">
+            <h2 class="section-title" data-i18n="production.title">Production at Scale</h2>
+            <div class="metrics-grid">
+                <div class="metric">
+                    <div class="metric-number">5,000+</div>
+                    <div class="metric-label" data-i18n="production.metric1">Units per day</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-number">100%</div>
+                    <div class="metric-label" data-i18n="production.metric2">Plant-based</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-number">HACCP</div>
+                    <div class="metric-label" data-i18n="production.metric3">Certified facility</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expansion -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="expansion.title">Global Expansion</h2>
+            
+            <!-- Expansion Image -->
+            <div class="section-image">
+                <img src="mamasabeimagenes/proyeccion.png" alt="Global Expansion">
+            </div>
+            
+            <div class="expansion-path">
+                <div class="expansion-step">
+                    <div class="expansion-marker active">🇦🇷</div>
+                    <h3 class="expansion-location">Argentina</h3>
+                    <p class="expansion-status" data-i18n="expansion.argentina">Established</p>
+                </div>
+                <div class="expansion-arrow">→</div>
+                <div class="expansion-step">
+                    <div class="expansion-marker">🇪🇺</div>
+                    <h3 class="expansion-location" data-i18n="expansion.europe">Europe</h3>
+                    <p class="expansion-status">2026</p>
+                </div>
+                <div class="expansion-arrow">→</div>
+                <div class="expansion-step">
+                    <div class="expansion-marker">🇺🇸</div>
+                    <h3 class="expansion-location" data-i18n="expansion.usa">United States</h3>
+                    <p class="expansion-status">2027</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Vision -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="vision.title">One Vision, Many Brands</h2>
+            <p class="vision-text" data-i18n="vision.text">We're building a family of authentic food brands under one roof. Each with its own story, all sharing the same commitment to quality and sustainability.</p>
+            <div class="vision-cta">
+                <strong data-i18n="vision.cta1">Growing together.</strong> <span data-i18n="vision.cta2">From farm to table, one brand at a time.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="section section-cta">
+        <div class="container">
+            <h2 class="section-title" data-i18n="email.title">Let's Connect</h2>
+            <p class="cta-subtitle" data-i18n="email.subtitle">Leave your email for news, launches, and business opportunities</p>
+            <form class="email-form" action="https://formspree.io/f/mqedkeoa" method="POST">
+                <div class="form-group">
+                    <input type="email" name="email" data-i18n-placeholder="email.placeholder1" placeholder="your@email.com" required class="email-input">
+                    <input type="text" name="nombre" data-i18n-placeholder="email.placeholder2" placeholder="Your name" class="email-input">
+                    <input type="text" name="empresa" data-i18n-placeholder="email.placeholder3" placeholder="Company (optional)" class="email-input">
+                </div>
+                <button type="submit" class="btn-submit" data-i18n="email.button">Get updates</button>
+                <p class="form-note" data-i18n="email.note">📧 We only send relevant content. No spam.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-title" data-i18n="footer.title">Visit Us at the Expo</h2>
+            <p class="footer-text" data-i18n="footer.text">Let's talk about partnerships and distribution opportunities.</p>
+            <div class="footer-contact">
+                <a href="mailto:hello@mammasabe.com" class="contact-link">hello@mammasabe.com</a>
+            </div>
+            <p class="footer-copy" data-i18n="footer.copy">© 2026 Mamma Sabe. Plant-based food with purpose.</p>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script>
+        // Toggle product info expansion
+        function toggleInfo(id) {
+            const element = document.getElementById(id);
+            const isOpen = element.style.maxHeight && element.style.maxHeight !== '0px';
+            
+            if (isOpen) {
+                element.style.maxHeight = '0';
+                element.style.opacity = '0';
+            } else {
+                element.style.maxHeight = element.scrollHeight + 'px';
+                element.style.opacity = '1';
+            }
+        }
+
+        // Language selector functionality
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.lang;
+                i18n.setLanguage(lang);
+                
+                // Update active button
+                document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // Load saved language or default to English
+        const savedLang = localStorage.getItem('language') || 'en';
+        i18n.setLanguage(savedLang);
+        document.querySelector(`[data-lang="${savedLang}"]`)?.classList.add('active');
+    </script>
+
+</body>
+</html>
