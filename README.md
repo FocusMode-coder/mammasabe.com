@@ -9,9 +9,10 @@ MammaSabe/
 ├── index.html              # Página principal
 ├── styles.css              # Estilos CSS
 ├── i18n.js                 # Sistema de traducciones (5 idiomas)
-├── server.py               # Servidor Flask con keep-alive
+├── app.py                  # Servidor Flask con keep-alive
 ├── requirements.txt        # Dependencias Python
 ├── render.yaml             # Configuración para Render
+├── Procfile                # Comando de inicio para Render
 ├── .gitignore              # Archivos a ignorar en Git
 ├── assets/                 # Imágenes extraídas del PDF
 │   ├── p01_img001.jpeg
